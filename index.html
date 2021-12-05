@@ -14,12 +14,12 @@
             <div class="small-5 columns text-center">
                 <img 
                 v-if="myChoice !== null"
-                :src="'./images/' + myChoice + '.jpg'" 
+                :src="myChoice + '.jpg'" 
                 alt="" 
                 class="text-center">
                 <img 
                 v-else
-                src="./images/question.jpg"
+                src="question.jpg"
                 alt="" 
                 class="text-center">
                 <h1 class="text-center"><strong>YOU</strong></h1>
@@ -30,12 +30,12 @@
             <div class="small-5 columns text-center">
                 <img 
                 v-if="comChoice !== null"
-                :src="'./images/' + comChoice + '.jpg'" 
+                :src="comChoice + '.jpg'" 
                 alt="" 
                 class="text-center">
                 <img 
                 v-else
-                src="./images/question.jpg"
+                src="question.jpg"
                 alt="" 
                 class="text-center">
                 <h1 class="text-center"><strong>Computer</strong></h1>
@@ -47,12 +47,12 @@
                 <div class="battle-wrap">
                     <img 
                     v-for="life in lifeOfMe"
-                    src="./images/heart.jpg" 
+                    src="heart.jpg" 
                     class="heart" 
                     alt="">
                     <img 
                     v-for="life in 3-lifeOfMe"
-                    src="./images/broken-heart.jpg" 
+                    src="broken-heart.jpg" 
                     class="heart" 
                     alt="">
                 </div>
@@ -61,12 +61,12 @@
                 <div class="battle-wrap">
                     <img 
                     v-for="life in lifeOfCom"
-                    src="./images/heart.jpg" 
+                    src="heart.jpg" 
                     class="heart" 
                     alt="">
                     <img 
                     v-for="life in 3-lifeOfCom"
-                    src="./images/broken-heart.jpg" 
+                    src="broken-heart.jpg" 
                     class="heart" 
                     alt="">
                 </div>
