@@ -14,12 +14,12 @@
             <div class="small-5 columns text-center">
                 <img 
                 v-if="myChoice !== null"
-                :src="'images/' + myChoice + '.jpg'" 
+                :src="'./images/' + myChoice + '.jpg'" 
                 alt="" 
                 class="text-center">
                 <img 
                 v-else
-                src="images/question.jpg"
+                src="./images/question.jpg"
                 alt="" 
                 class="text-center">
                 <h1 class="text-center"><strong>YOU</strong></h1>
@@ -30,12 +30,12 @@
             <div class="small-5 columns text-center">
                 <img 
                 v-if="comChoice !== null"
-                :src="'images/' + comChoice + '.jpg'" 
+                :src="'./images/' + comChoice + '.jpg'" 
                 alt="" 
                 class="text-center">
                 <img 
                 v-else
-                src="images/question.jpg"
+                src="./images/question.jpg"
                 alt="" 
                 class="text-center">
                 <h1 class="text-center"><strong>Computer</strong></h1>
