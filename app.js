@@ -54,7 +54,7 @@ new Vue({
         lifeOfMe: function(newVal){
             if(newVal === 0){
                 setTimeout(()=>{
-                    confirm("다시 해보실?")
+                    confirm("다시 하시겠습니까?")
                     this.lifeOfMe = 3
                     this.lifeOfCom = 3
                     this.myChoice = null
@@ -67,7 +67,7 @@ new Vue({
         lifeOfCom: function(newVal){
             if(newVal === 0){
                 setTimeout(()=>{
-                    confirm("ㅊㅋㅊㅋ이김, 취업도 이기자 ㅎ")
+                    confirm("축하드립니다, 이기셨습니다!")
                     this.lifeOfMe = 3
                     this.lifeOfCom = 3
                     this.myChoice = null
@@ -85,7 +85,6 @@ new Vue({
                 alert("가위, 바위, 보 중 하나를 선택해주세요.")
             }
             else{
-                console.log("아이티윌 취업 화이팅 ㅎ")
                 let countDown = setInterval(()=>{
                     this.count--
                     if(this.count === 0){
@@ -93,7 +92,6 @@ new Vue({
                     }
                 }, 1000)
             }
-            console.log("다들 힘내요")
         }
     },
 })
